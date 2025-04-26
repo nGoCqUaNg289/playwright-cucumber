@@ -1,0 +1,93 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "playwright-with-cucumber;search-on-google",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Search on Google",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 573894000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I navigate to \"https://www.google.com\"",
+            "match": {
+              "location": "features\\step_definitions\\steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2814942399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I type \"Playwright\" into the search box",
+            "match": {
+              "location": "features\\step_definitions\\steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67168400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I press the \"Enter\" key",
+            "match": {
+              "location": "features\\step_definitions\\steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12490700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see search results for \"Playwright\"",
+            "match": {
+              "location": "features\\step_definitions\\steps.ts:17"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5002870200,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\Autotest_project\\playwright-cucumber\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 332113300
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "playwright-with-cucumber",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Playwright with Cucumber",
+    "tags": [],
+    "uri": "features\\example.feature"
+  }
+]
