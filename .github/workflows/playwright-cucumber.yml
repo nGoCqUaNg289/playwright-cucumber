@@ -26,17 +26,16 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build TypeScript files
-        run: npm run build
-        # Nếu bạn build thủ công: tsc
-        # hoặc nếu bạn có lệnh build script trong package.json
+      # Chỉ chạy nếu dùng TypeScript và có script build
+      # - name: Build TypeScript files
+      #   run: npm run build # hoặc tsc
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
       - name: Run Playwright Cucumber tests
         run: npm run test:e2e
-        # hoặc lệnh riêng cho cucumber: npx cucumber-js
+        # hoặc npx cucumber-js nếu không có script
 
       - name: Upload test results (optional)
         if: always()
