@@ -34,7 +34,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright Cucumber tests
-        run: npm run test:e2e
+        run: npm test
         # hoặc npx cucumber-js nếu không có script
 
       - name: Upload test results (optional)
