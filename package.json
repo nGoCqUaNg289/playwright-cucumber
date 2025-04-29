@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js features/**/*.feature --require-module ts-node/register --require features/support/*.ts --require features/**/step_definitions/*.ts --format json:report/report.json",
+    "test": "cucumber-js --require-module ts-node/register --require features/support/*.ts --require features/**/step_definitions/*.ts features/**/*.feature",
     "report": "node generate-report.js",
     "test:with-report": "npm test && npm run report"
   },
