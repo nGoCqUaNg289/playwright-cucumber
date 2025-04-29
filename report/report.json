@@ -4,70 +4,69 @@
     "elements": [
       {
         "description": "",
-        "id": "playwright-with-cucumber;search-on-google",
+        "id": "login-functionality;successful-login",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Search on Google",
+        "name": "Successful login",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 770335399
+              "duration": 462087900
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I navigate to \"https://www.google.com\"",
+            "name": "I navigate to login page \"https://edp-paso-ui-test.mobifi.vn/flow/il_v1\"",
             "match": {
-              "location": "features\\search\\step_definitions\\steps.ts:5"
+              "location": "features\\login\\step_definitions\\auth-steps.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 762567499
+              "duration": 2316718300
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I type \"Playwright\" into the search box",
+            "name": "I type \"0921883812\" into the phone number box",
             "match": {
-              "location": "features\\search\\step_definitions\\steps.ts:9"
+              "location": "features\\login\\step_definitions\\auth-steps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 67138700
+              "duration": 47765500
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "I press the \"Enter\" key",
+            "name": "I click the \"Xác nhận\" button",
             "match": {
-              "location": "features\\search\\step_definitions\\steps.ts:13"
+              "location": "features\\login\\step_definitions\\auth-steps.ts:14"
             },
             "result": {
               "status": "passed",
-              "duration": 23579600
+              "duration": 337942900
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "I should see search results for \"Playwright\"",
+            "name": "I should see title for \"Hồ sơ mở thẻ được ghi nhận cho kênh khai thác khác\"",
             "match": {
-              "location": "features\\search\\step_definitions\\steps.ts:17"
+              "location": "features\\login\\step_definitions\\auth-steps.ts:19"
             },
             "result": {
-              "status": "failed",
-              "duration": 5011861799,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\Autotest_project\\playwright-cucumber\\node_modules\\@cucumber\\cucumber\\src\\time.ts:52:14)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)"
+              "status": "passed",
+              "duration": 894125900
             }
           },
           {
@@ -75,83 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 406119500
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "playwright-with-cucumber;search-with-empty-string",
-        "keyword": "Scenario",
-        "line": 10,
-        "name": "Search with empty string",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 730691300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 11,
-            "name": "I navigate to \"https://www.google.com\"",
-            "match": {
-              "location": "features\\search\\step_definitions\\steps.ts:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 634473899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "I type \"   \" into the search box",
-            "match": {
-              "location": "features\\search\\step_definitions\\steps.ts:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 66528099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "I press the \"Enter\" key",
-            "match": {
-              "location": "features\\search\\step_definitions\\steps.ts:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 8917699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
-            "name": "I should see an error message",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 624076199
+              "duration": 228373900
             }
           }
         ],
@@ -159,11 +82,11 @@
         "type": "scenario"
       }
     ],
-    "id": "playwright-with-cucumber",
+    "id": "login-functionality",
     "line": 1,
     "keyword": "Feature",
-    "name": "Playwright with Cucumber",
+    "name": "Login Functionality",
     "tags": [],
-    "uri": "features\\search\\google-search.feature"
+    "uri": "features\\login\\login.feature"
   }
 ]
