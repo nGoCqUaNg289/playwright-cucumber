@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 462087900
+              "duration": 556012699
             }
           },
           {
@@ -23,24 +23,24 @@
             "line": 4,
             "name": "I navigate to login page \"https://edp-paso-ui-test.mobifi.vn/flow/il_v1\"",
             "match": {
-              "location": "features\\login\\step_definitions\\auth-steps.ts:5"
+              "location": "features\\login\\step_definitions\\auth-steps.ts:6"
             },
             "result": {
               "status": "passed",
-              "duration": 2316718300
+              "duration": 3285921199
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I type \"0921883812\" into the phone number box",
+            "name": "I type random phone number into the phone number box",
             "match": {
-              "location": "features\\login\\step_definitions\\auth-steps.ts:9"
+              "location": "features\\login\\step_definitions\\auth-steps.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 47765500
+              "duration": 335098299
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 6,
             "name": "I click the \"Xác nhận\" button",
             "match": {
-              "location": "features\\login\\step_definitions\\auth-steps.ts:14"
+              "location": "features\\login\\step_definitions\\auth-steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 337942900
+              "duration": 1025194199
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 7,
             "name": "I should see title for \"Hồ sơ mở thẻ được ghi nhận cho kênh khai thác khác\"",
             "match": {
-              "location": "features\\login\\step_definitions\\auth-steps.ts:19"
+              "location": "features\\login\\step_definitions\\auth-steps.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 894125900
+              "duration": 920309299
             }
           },
           {
@@ -74,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 228373900
+              "duration": 320263700
             }
           }
         ],
