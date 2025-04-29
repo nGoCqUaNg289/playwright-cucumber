@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
-import { PlaywrightWorld } from '../support/world';
+import { PlaywrightWorld } from '../../support/world';
 
 Given('I navigate to {string}', async function (this: PlaywrightWorld, url: string) {
   await this.page.goto(url);

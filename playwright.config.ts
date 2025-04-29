@@ -8,9 +8,12 @@ const config: PlaywrightTestConfig = {
     ignoreHTTPSErrors: true,
     video: 'on-first-retry',
   },
+  testDir: './features',
+  testMatch: '**/*.feature',
   projects: [
     {
-      name: 'chromium',
+      name: 'cucumber',
+      testMatch: '**/*.feature',
       use: { browserName: 'chromium' },
     },
   ],

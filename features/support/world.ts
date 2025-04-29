@@ -1,5 +1,6 @@
 import { IWorldOptions, setWorldConstructor, World } from '@cucumber/cucumber';
 import { Browser, BrowserContext, Page, chromium } from '@playwright/test';
+import { AllureCucumberTestRuntime } from 'allure-cucumberjs';
 
 export class PlaywrightWorld extends World {
   browser!: Browser;
