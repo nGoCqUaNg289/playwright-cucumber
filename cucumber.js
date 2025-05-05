@@ -9,8 +9,8 @@ module.exports = {
     format: [
       'json:report/report.json',
       'progress-bar',
-      '@cucumber/pretty-formatter',
-      ['allure-cucumberjs', { outputDir: './allure-results' }]
+      '@cucumber/pretty-formatter'
+      // ['allure-playwright', 'output-dir=./allure-results']
     ]
   }
 };

@@ -14,59 +14,59 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 527085200
+              "duration": 262362000
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
             "line": 4,
-            "name": "I navigate to login page \"https://edp-paso-ui-test.mobifi.vn/flow/il_v1\"",
+            "name": "I navigate to login page \"https://www.saucedemo.com/\"",
             "match": {
-              "location": "features\\login\\step_definitions\\auth-steps.ts:6"
+              "location": "features\\login\\step_definitions\\login-steps.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 2391108199
+              "duration": 839104599
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I type random phone number into the phone number box",
+            "name": "I login with username \"standard_user\" and password \"secret_sauce\"",
             "match": {
-              "location": "features\\login\\step_definitions\\auth-steps.ts:11"
+              "location": "features\\login\\step_definitions\\login-steps.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 2421724299
+              "duration": 64749600
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "I click the \"Xác nhận\" button",
+            "name": "I click the \"Login\" button",
             "match": {
-              "location": "features\\login\\step_definitions\\auth-steps.ts:19"
+              "location": "features\\login\\step_definitions\\login-steps.ts:17"
             },
             "result": {
               "status": "passed",
-              "duration": 1489168700
+              "duration": 90068900
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "I should see title for \"Hồ sơ mở thẻ được ghi nhận cho kênh khai thác khác\"",
+            "name": "I should see title for \"Products\"",
             "match": {
-              "location": "features\\login\\step_definitions\\auth-steps.ts:24"
+              "location": "features\\login\\step_definitions\\login-steps.ts:22"
             },
             "result": {
               "status": "passed",
-              "duration": 911582900
+              "duration": 19013299
             }
           },
           {
@@ -74,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 407723400
+              "duration": 54479600
             }
           }
         ],
