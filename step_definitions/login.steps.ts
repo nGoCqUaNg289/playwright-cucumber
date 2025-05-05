@@ -21,8 +21,13 @@ When('I click the {string} button',
     await loginPage.clickButton(buttonText);
   });
 
-Then('I should see title for {string}',
+Then('I should see {string}',
   async function (this: PlaywrightWorld, text: string) {
     const loginPage = new LoginPage(this.page);
-    await loginPage.verifyTitle(text);
+
+    if (text == 'Products') {
+      await loginPage.verifyTitle(text);
+    } else {
+      await loginPage.verifyErrorMessage(text);
+    }
   });

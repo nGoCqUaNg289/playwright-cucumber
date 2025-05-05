@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./test-results:/app/test-results
+      - ./report:/app/report
+    environment:
+      - CI=true

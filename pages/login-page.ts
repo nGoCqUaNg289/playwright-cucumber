@@ -8,6 +8,7 @@ export class LoginPage extends BasePage {
   private readonly loginButton = (buttonText: string) => 
     this.page.getByRole('button', { name: buttonText });
   private readonly titleElement = '[data-test="title"]';
+  private readonly errorElement = '[data-test="error"]';
 
   constructor(page: Page) {
     super(page);
@@ -28,6 +29,12 @@ export class LoginPage extends BasePage {
 
   async verifyTitle(expectedText: string) {
     const title = this.page.locator(this.titleElement);
+    await title.waitFor();
+    await expect(title).toContainText(expectedText.trim());
+  }
+
+  async verifyErrorMessage(expectedText: string) {
+    const title = this.page.locator(this.errorElement);
     await title.waitFor();
     await expect(title).toContainText(expectedText.trim());
   }
