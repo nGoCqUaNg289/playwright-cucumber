@@ -1,5 +1,5 @@
-node_modules
+node_modules/
 package-lock.json
-report
-test-results
+report/
+test-results/
 output-dir=.

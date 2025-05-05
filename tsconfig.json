@@ -15,5 +15,17 @@
       "@cucumber/cucumber"
     ]
   },
-  "include": ["features/**/*.ts"]
+  "include": [
+    "features/**/*.feature",
+    "pages/**/*.ts",
+    "step_definitions/*.ts",
+    "support/*.ts",
+    "utils/*.ts",
+    "tests/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "reports"
+  ]
 }
