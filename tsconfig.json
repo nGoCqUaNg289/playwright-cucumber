@@ -1,12 +1,19 @@
 {
-    "compilerOptions": {
-      "target": "ES2022",
-      "module": "commonjs",
-      "outDir": "dist",
-      "rootDir": ".",
-      "strict": true,
-      "esModuleInterop": true,
-      "skipLibCheck": true,
-      "types": ["@playwright/test", "@cucumber/cucumber"]
-    }
-  }
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "outDir": "dist",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "types": [
+      "@playwright/test",
+      "@cucumber/cucumber"
+    ]
+  },
+  "include": ["features/**/*.ts"]
+}
