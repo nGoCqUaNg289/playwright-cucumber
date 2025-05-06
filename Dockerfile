@@ -35,4 +35,4 @@ COPY . .
 RUN npx playwright install --with-deps chromium
 
 # Thiết lập lệnh mặc định
-CMD ["npm", "run", "test"]
+CMD ["npm", "test"]
