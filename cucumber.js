@@ -8,7 +8,7 @@ module.exports = {
     format: [
       'json:report/report.json',
       'progress-bar',
-      '@cucumber/pretty-formatter'
+      '@cucumber/pretty-formatter',
     ]
   }
 }
